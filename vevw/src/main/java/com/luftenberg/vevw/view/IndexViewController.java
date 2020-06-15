@@ -22,23 +22,9 @@ public class IndexViewController {
 		SomeEntity e = new SomeEntity();
 		e.setSomeValue("thiiiss value");
 		someEntityService.save(e);
+
 		e = new SomeEntity();
 		e.setSomeValue("another value");
-		System.out.println("-----------------------------sss");
-		System.out.println("-----------------------------sss");
-		System.out.println("-----------------------------sss");
-		System.out.println("-----------------------------sss");
-		System.out.println("-----------------------------sss");
-		System.out.println("-----------------------------sss");
-		System.out.println("-----------------------------sss");
-		System.out.println("-----------------------------sss");
-		System.out.println("-----------------------------sss");
-		System.out.println("-----------------------------sss");
-		System.out.println("-----------------------------sss");
-		System.out.println("-----------------------------sss");
-		System.out.println("-----------------------------sss");
-		System.out.println("-----------------------------sss");
-		System.out.println("-----------------------------sss");
 		someEntityService.save(e);
 	}
 	
