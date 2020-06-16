@@ -12,7 +12,7 @@ import com.luftenberg.vevw.model.SomeEntity;
 
 
 @Component
-public class IndexViewController {
+public class MemberView {
 
 	@Autowired
 	private SomeEntityService someEntityService;

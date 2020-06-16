@@ -16,11 +16,8 @@ import lombok.Setter;
 @Setter
 @Entity
 @Table(name = "someentity")
-public class SomeEntity {
+public class SomeEntity extends BaseEntity<Long> {
 	
-	@Id
-	@GeneratedValue(strategy = GenerationType.IDENTITY)
-	private Long id;
 	
 	@Column(name = "somevalue")
 	@NonNull
