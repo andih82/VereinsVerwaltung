@@ -10,11 +10,11 @@
       <title>Welcome</title>
    </h:head>
    <h:body>
-   <ui:composition template="template/defaultLayout.xhtml">
+   <ui:composition template="resources/template/defaultLayout.xhtml">
    <ui:define name="content">
       <h:form >
-         <h3>HMembers!!!</h3>
          <p:dataTable var="some" value="#{personView.entities}">
+         <f:facet name="header">Person</f:facet>
          <p:column headerText="Id">
          <h:outputText value="#{some.id}" />
          </p:column>

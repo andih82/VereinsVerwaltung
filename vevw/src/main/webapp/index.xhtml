@@ -2,29 +2,26 @@
 <!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN"
 "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
 <html xmlns="http://www.w3.org/1999/xhtml"
-      xmlns:h="http://java.sun.com/jsf/html"
-      xmlns:f="http://java.sun.com/jsf/core"
-      xmlns:p="http://primefaces.org/ui"
-      xmlns:ui="http://java.sun.com/jsf/facelets">
-   <h:head>
-      <title>Welcome</title>
-   </h:head>
-   <h:body>
-   <ui:composition template="template/defaultLayout.xhtml">
-   <ui:define name="content">
-      <h:form >
-         <h3>Hello World</h3>
-         <p:dataTable var="some" value="#{indexView.entities}">
-         <p:column headerText="Id">
-         <h:outputText value="#{some.id}" />
-         </p:column>
-         <p:column headerText="Value">
-         <h:outputText value="#{some.someValue}" />
-         </p:column>
-         
-         </p:dataTable>
-      </h:form>
-      </ui:define>
-      </ui:composition>
-   </h:body>
+	xmlns:h="http://java.sun.com/jsf/html"
+	xmlns:f="http://java.sun.com/jsf/core"
+	xmlns:p="http://primefaces.org/ui"
+	xmlns:ui="http://java.sun.com/jsf/facelets">
+<h:body>
+	<ui:composition template="resources/template/defaultLayout.xhtml">
+		<ui:define name="content">
+			<h:form>
+				<p:dataTable var="some" value="#{indexView.entities}">
+					<f:facet name="header">Index</f:facet>
+					<p:column headerText="Id">
+						<h:outputText value="#{some.id}" />
+					</p:column>
+					<p:column headerText="Value">
+						<h:outputText value="#{some.someValue}" />
+					</p:column>
+
+				</p:dataTable>
+			</h:form>
+		</ui:define>
+	</ui:composition>
+</h:body>
 </html>

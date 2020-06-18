@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN"
+"http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml"
+	xmlns:h="http://java.sun.com/jsf/html"
+	xmlns:f="http://java.sun.com/jsf/core"
+	xmlns:p="http://primefaces.org/ui"
+	xmlns:ui="http://java.sun.com/jsf/facelets">
+<body>
+	<ui:composition>
+			<p:graphicImage url="resources/images/WL-Logo.png" alt="Logo" height="80px"></p:graphicImage>
+
+		<p:menu class="ui-g-12">
+			<p:menuitem value="Home" outcome="index.xhtml" />
+		        <p:separator />
+			<p:menuitem value="Mitglieder" outcome="member.xhtml" />
+			        <p:separator />
+			<p:menuitem value="Personen" outcome="person.xhtml" />
+		</p:menu>
+
+	</ui:composition>
+</body>
+</html>
